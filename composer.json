@@ -1,0 +1,20 @@
+{
+  "name": "v108b/nette-modal",
+  "type": "library",
+  "description": "Component for modal windows",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vaclav Juchelka",
+      "email": "vjuchelka@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "nette/nette": "~2.2"
+  },
+  "autoload": {
+    "classmap": ["src"]
+  }
+}

@@ -1,0 +1,19 @@
+<div>
+	{snippet modalWindow}
+		{if $view}
+			<div class="modal" id="modalWindow" data-show="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						{snippet content}
+							<div class="modal-header">
+								<a n:href="close!" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+								<h4 n:ifset="$view->title" class="modal-title">{$view->title}</h4>
+							</div>
+							{$view->render()}
+						{/snippet}
+					</div>
+				</div>
+			</div>
+		{/if}
+	{/snippet}
+</div>
